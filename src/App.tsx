@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import SalaryCheckForm from './components/SalaryCheckForm';
+import SalaryCheckForm from './components/salary check form/SalaryCheckForm';
 
 function App() {
   return (
