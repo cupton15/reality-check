@@ -3,19 +3,31 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 
 type FormData = {
-  salary: Number;
+  salary: number;
 };
 
 export default function SalaryCheckForm() {
-  const { register, handleSubmit } = useForm<FormData>();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormData>();
   const onSubmit = handleSubmit((data) => console.log(data));
 
   return (
     <form onSubmit={onSubmit}>
-      <label htmlFor="salary-input">
+      <label htmlFor="salary">
         Salary
-        <input id="salary-input" type="number" {...register('salary')} />
+        <input
+          id="salary"
+          type="number"
+          aria-invalid={errors.salary ? 'true' : 'false'}
+          {...register('salary', { required: true })}
+        />
       </label>
+      {errors.salary && errors.salary.type === 'required' && (
+        <span role="alert">Salary is required</span>
+      )}
       <input type="submit" />
     </form>
   );
