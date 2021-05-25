@@ -8,7 +8,7 @@ type FormProps = {
   onSubmit: (data: JobInformation) => void;
 };
 
-export default function SalaryCheckForm({ onSubmit }: FormProps) {
+export default function SalaryCheckForm({ onSubmit }: FormProps): JSX.Element {
   const {
     register,
     handleSubmit,
