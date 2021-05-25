@@ -2,21 +2,25 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import ValidationMessage from './validation message/ValidationMessage';
+import JobInformation from '../../types/JobInformation';
 
-type FormData = {
-  salary: number;
+type FormProps = {
+  onSubmit: (data: JobInformation) => void;
 };
 
-export default function SalaryCheckForm() {
+export default function SalaryCheckForm({ onSubmit }: FormProps) {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<FormData>();
-  const onSubmit = handleSubmit((data) => console.log(data));
+  } = useForm<JobInformation>();
+  const submitHandler = handleSubmit((data) => onSubmit(data));
 
   return (
-    <form onSubmit={onSubmit} className="flex flex-col space-y-6 space-x-2">
+    <form
+      onSubmit={submitHandler}
+      className="flex flex-col space-y-6 space-x-2"
+    >
       <label htmlFor="salary">
         Salary
         <input
