@@ -4,18 +4,16 @@
       "location": "United Kingdom",
       "medianSalary": 31461,
       "percentiles": [
-        {
-          "10th": 18001,
-          "20th": 21155,
-          "25th": 22745,
-          "30th": 24344,
-          "40th": 27717,
-          "60th": 35740,
-          "70th": 40922,
-          "75th": 44119,
-          "80th": 47928,
-          "90th": 62589
-        }
+        { "percentile": "10th", "value": 18001 },
+        { "percentile": "20th", "value": 21155 },
+        { "percentile": "25th", "value": 22745 },
+        { "percentile": "30th", "value": 24344 },
+        { "percentile": "40th", "value": 27717 },
+        { "percentile": "60th", "value": 35740 },
+        { "percentile": "70th", "value": 40922 },
+        { "percentile": "75th", "value": 44119 },
+        { "percentile": "80th", "value": 47928 },
+        { "percentile": "90th", "value": 62589 }
       ]
     }
   ]
