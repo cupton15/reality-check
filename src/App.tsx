@@ -13,7 +13,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App h-screen grid justify-center content-center">
       <SalaryCheckForm onSubmit={onSubmit} />
       {submitted && jobInfo && <SalaryResults jobInfo={jobInfo} />}
     </div>
