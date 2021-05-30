@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App h-screen grid justify-center content-center">
-      <SalaryCheckForm onSubmit={onSubmit} />
+      {!submitted && <SalaryCheckForm onSubmit={onSubmit} />}
       {submitted && jobInfo && <SalaryResults jobInfo={jobInfo} />}
     </div>
   );

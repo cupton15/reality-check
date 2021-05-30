@@ -1,7 +1,8 @@
 import React from 'react';
+import Percentile from '../../../types/Percentile';
 
 type PercentileProps = {
-  percentiles: { percentile: string; value: number }[];
+  percentiles: Percentile[];
   salary: number;
 };
 
