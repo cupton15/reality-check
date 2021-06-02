@@ -54,7 +54,6 @@ export default function SalaryChart({
             title: { display: true, text: 'Percentile' },
           },
           yAxis: {
-            title: { display: true, text: 'Median salary' },
             ticks: {
               format: {
                 style: 'currency',

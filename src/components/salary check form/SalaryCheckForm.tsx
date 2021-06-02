@@ -19,7 +19,10 @@ export default function SalaryCheckForm({ onSubmit }: FormProps): JSX.Element {
   const submitHandler = handleSubmit((data) => onSubmit(data));
 
   return (
-    <form onSubmit={submitHandler} className="flex flex-col">
+    <form
+      onSubmit={submitHandler}
+      className="flex flex-col w-screen md:w-3/4 p-5 gap-y-8"
+    >
       <label htmlFor="salary" className="relative">
         <PoundSign
           className="w-6 h-6 text-gray-400 absolute left-2 top-1/6"
