@@ -16,5 +16,23 @@
         { "percentile": "90th", "value": 62589 }
       ]
     }
+  ],
+  "partTime": [
+    {
+      "location": "United Kingdom",
+      "medianSalary": 11234,
+      "percentiles": [
+        { "percentile": "10th", "value": 3764 },
+        { "percentile": "20th", "value": 6389 },
+        { "percentile": "25th", "value": 7255 },
+        { "percentile": "30th", "value": 8161 },
+        { "percentile": "40th", "value": 9600 },
+        { "percentile": "60th", "value": 12885 },
+        { "percentile": "70th", "value": 15230 },
+        { "percentile": "75th", "value": 16770 },
+        { "percentile": "80th", "value": 18750 },
+        { "percentile": "90th", "value": 25910 }
+      ]
+    }
   ]
 }

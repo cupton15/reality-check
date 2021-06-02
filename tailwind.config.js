@@ -1,5 +1,6 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+/* eslint-disable @typescript-eslint/no-var-requires */
 const defaultTheme = require('tailwindcss/defaultTheme');
+const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
@@ -23,7 +24,22 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['label-checked'],
+      borderColor: ['label-checked'],
+      textColor: ['label-checked'],
+      fontWeight: ['label-checked'],
+    },
   },
-  plugins: [],
+  plugins: [
+    plugin(({ addVariant, e }) => {
+      addVariant('label-checked', ({ modifySelectors, separator }) => {
+        modifySelectors(({ className }) => {
+          const eClassName = e(`label-checked${separator}${className}`); // escape class
+          const yourSelector = 'input[type="radio"]'; // your input selector. Could be any
+          return `${yourSelector}:checked ~ .${eClassName}`; // ~ - CSS selector for siblings
+        });
+      });
+    }),
+  ],
 };

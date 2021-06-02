@@ -1,13 +1,15 @@
 import React from 'react';
-import ukJobData from '../../../data/UK salaries.json';
 
 type MedianProps = {
   salary: number;
+  medianSalary: number;
 };
 
-export default function MedianText({ salary }: MedianProps): JSX.Element {
-  const medianPercentage: number =
-    (salary / ukJobData.fullTime[0].medianSalary) * 100;
+export default function MedianText({
+  salary,
+  medianSalary,
+}: MedianProps): JSX.Element {
+  const medianPercentage: number = (salary / medianSalary) * 100;
 
   let resultText: JSX.Element;
   if (medianPercentage < 100) {
@@ -34,7 +36,7 @@ export default function MedianText({ salary }: MedianProps): JSX.Element {
         style: 'currency',
         currency: 'GBP',
         maximumFractionDigits: 0,
-      }).format(ukJobData.fullTime[0].medianSalary)}
+      }).format(medianSalary)}
     </p>
   );
 }
