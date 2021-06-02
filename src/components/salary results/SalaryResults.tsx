@@ -11,7 +11,7 @@ type ResultProps = {
 
 export default function SalaryResults({ jobInfo }: ResultProps): JSX.Element {
   return (
-    <div className="text-4xl p-5">
+    <div className="flex flex-col items-center text-xl md:text-4xl p-5 gap-y-2">
       <MedianText salary={jobInfo.salary} />
       <PercentileText
         percentiles={ukJobData.fullTime[0].percentiles}

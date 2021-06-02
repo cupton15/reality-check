@@ -6,6 +6,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      height: {
+        '40v': '40vh',
+        '50v': '50vh',
+        '60v': '60vh',
+      },
       inset: {
         '1/6': '16.66%',
       },

@@ -41,37 +41,42 @@ export default function SalaryChart({
     (l, i) => `${l} percentile: £${data[i]}`
   );
 
+  const options = {
+    scales: {
+      xAxis: {
+        title: { display: true, text: 'Percentile' },
+      },
+      yAxis: {
+        ticks: {
+          format: {
+            style: 'currency',
+            currency: 'GBP',
+          },
+        },
+      },
+    },
+    plugins: {
+      title: {
+        display: true,
+        text: title,
+      },
+      legend: {
+        display: false,
+      },
+    },
+    maintainAspectRatio: false,
+  };
+
   return (
-    <Bar
-      type="bar"
-      data={chartData}
-      aria-label={`A bar chart showing the ${title} into percentiles which are as follows: ${accessibilityArray.join(
-        ', '
-      )}`}
-      options={{
-        scales: {
-          xAxis: {
-            title: { display: true, text: 'Percentile' },
-          },
-          yAxis: {
-            ticks: {
-              format: {
-                style: 'currency',
-                currency: 'GBP',
-              },
-            },
-          },
-        },
-        plugins: {
-          title: {
-            display: true,
-            text: title,
-          },
-          legend: {
-            display: false,
-          },
-        },
-      }}
-    />
+    <article className="h-50v md:w-3/4">
+      <Bar
+        type="bar"
+        data={chartData}
+        aria-label={`A bar chart showing the ${title} into percentiles which are as follows: ${accessibilityArray.join(
+          ', '
+        )}`}
+        options={options}
+      />
+    </article>
   );
 }
