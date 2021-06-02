@@ -68,7 +68,7 @@ export default function SalaryCheckForm({ onSubmit }: FormProps): JSX.Element {
           />
           <label
             htmlFor="full-time"
-            className="label-checked:bg-blue-400 label-checked:text-white label-checked:font-bold label-checked:border-blue-400 border border-gray-200 rounded-md p-3"
+            className="label-checked:bg-blue-400 label-checked:text-white label-checked:font-bold label-checked:border-blue-400 border border-gray-200 rounded-md p-3 cursor-pointer"
           >
             Full-Time
           </label>
@@ -84,7 +84,7 @@ export default function SalaryCheckForm({ onSubmit }: FormProps): JSX.Element {
           />
           <label
             htmlFor="part-time"
-            className="label-checked:bg-blue-400 label-checked:text-white label-checked:font-bold label-checked:border-blue-400 border border-gray-200 rounded-md p-3"
+            className="label-checked:bg-blue-400 label-checked:text-white label-checked:font-bold label-checked:border-blue-400 border border-gray-200 rounded-md p-3 cursor-pointer"
           >
             Part-Time
           </label>
