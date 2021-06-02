@@ -14,13 +14,14 @@ function App() {
   };
 
   return (
-    <>
+    <div className="grid h-screen grid-cols-1 grid-rows-header">
       <Header />
-      <div className="App h-auto grid justify-center content-center">
+
+      <div className="App self-center">
         {!submitted && <SalaryCheckForm onSubmit={onSubmit} />}
         {submitted && jobInfo && <SalaryResults jobInfo={jobInfo} />}
       </div>
-    </>
+    </div>
   );
 }
 

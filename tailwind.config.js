@@ -9,6 +9,9 @@ module.exports = {
       inset: {
         '1/6': '16.66%',
       },
+      gridTemplateRows: {
+        header: '15% auto',
+      },
       fontFamily: {
         sans: ['Raleway', ...defaultTheme.fontFamily.sans],
       },
