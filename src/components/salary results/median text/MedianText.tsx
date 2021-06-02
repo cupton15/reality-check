@@ -9,13 +9,22 @@ export default function MedianText({ salary }: MedianProps): JSX.Element {
   const medianPercentage: number =
     (salary / ukJobData.fullTime[0].medianSalary) * 100;
 
-  let resultText: string;
+  let resultText: JSX.Element;
   if (medianPercentage < 100) {
-    resultText = `${(100 - medianPercentage).toFixed(2)}% lower than`;
+    resultText = (
+      <span>{`${(100 - medianPercentage).toFixed(2)}% lower than`}</span>
+    );
   } else if (medianPercentage > 100) {
-    resultText = `${(medianPercentage - 100).toFixed(2)}% higher than`;
+    resultText = (
+      <span>
+        <span style={{ color: '#32CD32' }}>
+          {(medianPercentage - 100).toFixed(2)}
+        </span>
+        % higher than
+      </span>
+    );
   } else {
-    resultText = 'the exact same as';
+    resultText = <span>the exact same as</span>;
   }
 
   return <p>Your salary is {resultText} the national median</p>;

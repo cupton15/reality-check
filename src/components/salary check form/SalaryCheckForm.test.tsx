@@ -16,7 +16,24 @@ describe('SalaryCheckForm', () => {
 
     expect(await screen.findAllByRole('alert')).toHaveLength(1);
     expect(await screen.findByRole('alert')).toHaveTextContent(
-      'Salary is required'
+      'Must provide a salary'
+    );
+    expect(mockSubmit).not.toBeCalled();
+  });
+
+  it('should display positive error when a negative salary is entered', async () => {
+    fireEvent.input(
+      await screen.getByRole('textbox', { name: 'Enter Salary' }),
+      {
+        target: {
+          value: '-1000',
+        },
+      }
+    );
+    fireEvent.submit(screen.getByRole('button'));
+    expect(await screen.findAllByRole('alert')).toHaveLength(1);
+    expect(await screen.findByRole('alert')).toHaveTextContent(
+      'Must provide a positive salary'
     );
     expect(mockSubmit).not.toBeCalled();
   });
