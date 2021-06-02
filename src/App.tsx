@@ -5,6 +5,7 @@ import SalaryCheckForm from './components/salary check form/SalaryCheckForm';
 import JobInformation from './types/JobInformation';
 import Header from './components/header/Header';
 import Button from './components/shared/Button';
+import Octocat from './Octocat.png';
 
 function App(): JSX.Element {
   const [submitted, setSubmitted] = useState(false);
@@ -27,6 +28,16 @@ function App(): JSX.Element {
         {submitted && jobInfo && <SalaryResults jobInfo={jobInfo} />}
         {submitted && <Button text="Reset" onClick={reset} />}
       </div>
+
+      <a
+        href="https://github.com/cupton15/reality-check"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Visit the github repo for Reality check (opens in a new tab)"
+        className="self-end m-2 w-12"
+      >
+        <img src={Octocat} alt="GitHub Octocat" className="h-12" />
+      </a>
     </div>
   );
 }

@@ -27,5 +27,14 @@ export default function MedianText({ salary }: MedianProps): JSX.Element {
     resultText = <span>the exact same as</span>;
   }
 
-  return <p>Your salary is {resultText} the national median</p>;
+  return (
+    <p>
+      Your salary is {resultText} the national median of&nbsp;
+      {Intl.NumberFormat('en-GB', {
+        style: 'currency',
+        currency: 'GBP',
+        maximumFractionDigits: 0,
+      }).format(ukJobData.fullTime[0].medianSalary)}
+    </p>
+  );
 }

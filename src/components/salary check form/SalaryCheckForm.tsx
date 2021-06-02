@@ -31,7 +31,7 @@ export default function SalaryCheckForm({ onSubmit }: FormProps): JSX.Element {
   return (
     <form
       onSubmit={submitHandler}
-      className="flex flex-col w-screen md:w-1/2 p-5 gap-y-8"
+      className="flex flex-col w-screen md:w-1/2 p-5 gap-y-8 max-w-2xl"
     >
       <div className="relative text-gray-400 focus-within:text-gray-600 ">
         <label htmlFor="salary">
