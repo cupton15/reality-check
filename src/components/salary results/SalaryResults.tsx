@@ -13,7 +13,7 @@ export default function SalaryResults({ jobInfo }: ResultProps): JSX.Element {
   const salaryData =
     jobInfo.type === 'FullTime' ? ukJobData.fullTime[0] : ukJobData.partTime[0];
   return (
-    <div className="flex flex-col items-center text-xl md:text-4xl p-5 gap-y-2 text-gray-600">
+    <div className="flex flex-col items-center text-xl md:text-4xl p-5 gap-y-2">
       <MedianText
         salary={jobInfo.salary}
         medianSalary={salaryData.medianSalary}

@@ -16,7 +16,7 @@ module.exports = {
         '1/6': '16.66%',
       },
       gridTemplateRows: {
-        header: '15% auto 50px',
+        header: '12% auto 50px',
       },
       fontFamily: {
         sans: ['Raleway', ...defaultTheme.fontFamily.sans],

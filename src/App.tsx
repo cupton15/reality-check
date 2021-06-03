@@ -20,11 +20,23 @@ function App(): JSX.Element {
   };
 
   return (
-    <div className="grid h-screen grid-cols-1 grid-rows-header">
+    <div className="grid h-screen grid-cols-1 grid-rows-header text-gray-500">
       <Header />
 
       <div className="App flex flex-col self-center items-center justify-items-center">
-        {!submitted && <SalaryCheckForm onSubmit={onSubmit} />}
+        {!submitted && (
+          <>
+            <div className="mb-8 px-4">
+              <p>
+                Sometimes you need a reality check when it comes to your
+                earnings.
+              </p>
+              <p>Spoiler alert: You&apos;ll be fine</p>
+            </div>
+
+            <SalaryCheckForm onSubmit={onSubmit} />
+          </>
+        )}
         {submitted && jobInfo && <SalaryResults jobInfo={jobInfo} />}
         {submitted && <Button text="Reset" onClick={reset} />}
       </div>
