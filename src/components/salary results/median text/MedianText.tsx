@@ -36,6 +36,7 @@ export default function MedianText({
         style: 'currency',
         currency: 'GBP',
         maximumFractionDigits: 0,
+        minimumFractionDigits: 0,
       }).format(medianSalary)}
     </p>
   );
