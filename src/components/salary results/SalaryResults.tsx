@@ -11,7 +11,14 @@ type ResultProps = {
 
 export default function SalaryResults({ jobInfo }: ResultProps): JSX.Element {
   const salaryData =
-    jobInfo.type === 'FullTime' ? ukJobData.fullTime[0] : ukJobData.partTime[0];
+    jobInfo.type === 'FullTime'
+      ? ukJobData.fullTime[0].ageRanges[0].all
+      : ukJobData.partTime[0].ageRanges[0].all;
+
+  if (salaryData === undefined) {
+    return <></>;
+  }
+
   return (
     <div className="flex flex-col items-center text-xl md:text-4xl p-5 gap-y-2">
       <MedianText

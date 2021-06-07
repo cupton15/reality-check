@@ -18,13 +18,13 @@ const schema = yup.object().shape({
     .transform((x) => (Number.isNaN(x) ? undefined : x))
     .positive('Must provide a positive salary')
     .required('Must provide a salary'),
+  ageRange: yup.string().required('Must select an age range'),
 });
 
 export default function SalaryCheckForm({ onSubmit }: FormProps): JSX.Element {
   const {
     register,
     handleSubmit,
-    getValues,
     formState: { errors },
   } = useForm<JobInformation>({ resolver: yupResolver(schema) });
   const submitHandler = handleSubmit((data) => onSubmit(data));
@@ -43,8 +43,8 @@ export default function SalaryCheckForm({ onSubmit }: FormProps): JSX.Element {
           <input
             id="salary"
             type="text"
-            placeholder="Enter Salary"
-            aria-label="Enter Salary"
+            placeholder="Enter Salary (Gross)"
+            aria-label="Enter Salary (Gross)"
             aria-invalid={errors.salary ? 'true' : 'false'}
             className="focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none w-full border border-gray-200 rounded-md text-sm placeholder-gray-400 py-2 pl-10"
             defaultValue=""
@@ -53,6 +53,26 @@ export default function SalaryCheckForm({ onSubmit }: FormProps): JSX.Element {
         </label>
         {errors.salary && (
           <ValidationMessage>{errors.salary.message}</ValidationMessage>
+        )}
+      </div>
+      <div>
+        <label htmlFor="age-select" className="sr-only">
+          Select age range
+        </label>
+        <select id="age-select" {...register('ageRange')} className="w-full">
+          <option value="">Choose an age range</option>
+          <option value="All" defaultChecked>
+            All
+          </option>
+          <option value="18-21">18-21</option>
+          <option value="22-29">22-39</option>
+          <option value="30-39">30-39</option>
+          <option value="40-49">40-49</option>
+          <option value="50-59">50-59</option>
+          <option value="60+">60+</option>
+        </select>
+        {errors.ageRange && (
+          <ValidationMessage>{errors.ageRange.message}</ValidationMessage>
         )}
       </div>
       <div className="flex justify-around">

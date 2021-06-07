@@ -26,12 +26,11 @@ function App(): JSX.Element {
       <div className="App flex flex-col self-center items-center justify-items-center">
         {!submitted && (
           <>
-            <div className="mb-8 px-4">
+            <div className="mb-4 px-4">
               <p>
                 Sometimes you need a reality check when it comes to your
                 earnings.
               </p>
-              <p>Spoiler alert: You&apos;ll be fine</p>
             </div>
 
             <SalaryCheckForm onSubmit={onSubmit} />

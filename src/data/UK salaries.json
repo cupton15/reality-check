@@ -2,36 +2,108 @@
   "fullTime": [
     {
       "location": "United Kingdom",
-      "medianSalary": 31461,
-      "percentiles": [
-        { "percentile": "10th", "value": 18001 },
-        { "percentile": "20th", "value": 21155 },
-        { "percentile": "25th", "value": 22745 },
-        { "percentile": "30th", "value": 24344 },
-        { "percentile": "40th", "value": 27717 },
-        { "percentile": "60th", "value": 35740 },
-        { "percentile": "70th", "value": 40922 },
-        { "percentile": "75th", "value": 44119 },
-        { "percentile": "80th", "value": 47928 },
-        { "percentile": "90th", "value": 62589 }
+      "ageRanges": [
+        {
+          "all": {
+            "medianSalary": 31461,
+            "percentiles": [
+              { "percentile": "10th", "value": 18001 },
+              { "percentile": "20th", "value": 21155 },
+              { "percentile": "25th", "value": 22745 },
+              { "percentile": "30th", "value": 24344 },
+              { "percentile": "40th", "value": 27717 },
+              { "percentile": "60th", "value": 35740 },
+              { "percentile": "70th", "value": 40922 },
+              { "percentile": "75th", "value": 44119 },
+              { "percentile": "80th", "value": 47928 },
+              { "percentile": "90th", "value": 62589 }
+            ]
+          }
+        },
+        {
+          "18-21": {
+            "medianSalary": 18087
+          }
+        },
+        {
+          "22-29": {
+            "medianSalary": 26096
+          }
+        },
+        {
+          "30-39": {
+            "medianSalary": 32965
+          }
+        },
+        {
+          "40-49": {
+            "medianSalary": 35904
+          }
+        },
+        {
+          "50-59": {
+            "medianSalary": 33231
+          }
+        },
+        {
+          "60+": {
+            "medianSalary": 28854
+          }
+        }
       ]
     }
   ],
   "partTime": [
     {
       "location": "United Kingdom",
-      "medianSalary": 11234,
-      "percentiles": [
-        { "percentile": "10th", "value": 3764 },
-        { "percentile": "20th", "value": 6389 },
-        { "percentile": "25th", "value": 7255 },
-        { "percentile": "30th", "value": 8161 },
-        { "percentile": "40th", "value": 9600 },
-        { "percentile": "60th", "value": 12885 },
-        { "percentile": "70th", "value": 15230 },
-        { "percentile": "75th", "value": 16770 },
-        { "percentile": "80th", "value": 18750 },
-        { "percentile": "90th", "value": 25910 }
+      "ageRanges": [
+        {
+          "all": {
+            "medianSalary": 11234,
+            "percentiles": [
+              { "percentile": "10th", "value": 3764 },
+              { "percentile": "20th", "value": 6389 },
+              { "percentile": "25th", "value": 7255 },
+              { "percentile": "30th", "value": 8161 },
+              { "percentile": "40th", "value": 9600 },
+              { "percentile": "60th", "value": 12885 },
+              { "percentile": "70th", "value": 15230 },
+              { "percentile": "75th", "value": 16770 },
+              { "percentile": "80th", "value": 18750 },
+              { "percentile": "90th", "value": 25910 }
+            ]
+          }
+        },
+        {
+          "18-21": {
+            "medianSalary": 6514
+          }
+        },
+        {
+          "22-29": {
+            "medianSalary": 10507
+          }
+        },
+        {
+          "30-39": {
+            "medianSalary": 12167
+          }
+        },
+        {
+          "40-49": {
+            "medianSalary": 12284
+          }
+        },
+        {
+          "50-59": {
+            "medianSalary": 11914
+          }
+        },
+        {
+          "60+": {
+            "medianSalary": 10505
+          }
+        }
       ]
     }
   ]
