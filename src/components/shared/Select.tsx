@@ -19,7 +19,7 @@ export default function Select({
   return (
     <div className="relative">
       <label htmlFor={id} className="sr-only">
-        {`Select ${formattedName}`}
+        {`Select an ${formattedName}`}
       </label>
       <Chevron className="w-6 h-6 absolute right-2 top-3" fill="currentColor" />
       <select

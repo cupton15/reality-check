@@ -62,10 +62,8 @@ export default function SalaryCheckForm({ onSubmit }: FormProps): JSX.Element {
         </div>
         <div>
           <Select id="age-select" name="ageRange">
-            <option value="">Choose an age range</option>
-            <option value="all" defaultChecked>
-              All
-            </option>
+            <option value="">Select an age range</option>
+            <option value="all">All</option>
             <option value="18-21">18-21</option>
             <option value="22-29">22-29</option>
             <option value="30-39">30-39</option>
