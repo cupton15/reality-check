@@ -34,7 +34,9 @@ export default function SalaryResults({ jobInfo }: ResultProps): JSX.Element {
         salary={jobInfo.salary}
       />
       <SalaryChart
-        title="UK National median salaries"
+        title={`UK National median salaries ${
+          jobInfo.ageRange !== 'all' ? `(${jobInfo.ageRange} age range)` : ''
+        }`}
         salary={jobInfo.salary}
         percentiles={salaryData.percentiles}
       />
