@@ -24,18 +24,7 @@ function App(): JSX.Element {
       <Header />
 
       <div className="App flex flex-col self-center items-center justify-items-center">
-        {!submitted && (
-          <>
-            <div className="mb-4 px-4">
-              <p>
-                Sometimes you need a reality check when it comes to your
-                earnings.
-              </p>
-            </div>
-
-            <SalaryCheckForm onSubmit={onSubmit} />
-          </>
-        )}
+        {!submitted && <SalaryCheckForm onSubmit={onSubmit} />}
         {submitted && jobInfo && <SalaryResults jobInfo={jobInfo} />}
         {submitted && <Button text="Reset" onClick={reset} />}
       </div>
