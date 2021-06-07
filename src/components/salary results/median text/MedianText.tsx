@@ -31,7 +31,7 @@ export default function MedianText({
 
   return (
     <p>
-      Your salary is {resultText} the national median of&nbsp;
+      Your salary is {resultText} the median of&nbsp;
       {Intl.NumberFormat('en-GB', {
         style: 'currency',
         currency: 'GBP',

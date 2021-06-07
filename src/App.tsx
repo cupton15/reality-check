@@ -26,15 +26,19 @@ function App(): JSX.Element {
       <div className="App flex flex-col self-center items-center justify-items-center">
         {!submitted && (
           <>
-            <div className="mb-8 px-4">
-              <p>
-                Sometimes you need a reality check when it comes to your
-                earnings.
-              </p>
-              <p>Spoiler alert: You&apos;ll be fine</p>
-            </div>
-
             <SalaryCheckForm onSubmit={onSubmit} />
+            <p>
+              All data sourced{' '}
+              <a
+                href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/bulletins/annualsurveyofhoursandearnings/2020/relateddata"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Visit the government employment and labour website for data sources"
+                className="underline text-blue-400"
+              >
+                here
+              </a>
+            </p>
           </>
         )}
         {submitted && jobInfo && <SalaryResults jobInfo={jobInfo} />}
