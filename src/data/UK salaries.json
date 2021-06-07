@@ -4,7 +4,8 @@
       "location": "United Kingdom",
       "ageRanges": [
         {
-          "all": {
+          "range": "all",
+          "salaryData": {
             "medianSalary": 31461,
             "percentiles": [
               { "percentile": "10th", "value": 18001 },
@@ -21,33 +22,111 @@
           }
         },
         {
-          "18-21": {
-            "medianSalary": 18087
+          "range": "18-21",
+          "salaryData": {
+            "medianSalary": 18087,
+            "percentiles": [
+              { "percentile": "10th", "value": 10906 },
+              { "percentile": "20th", "value": 13345 },
+              { "percentile": "25th", "value": 14403 },
+              { "percentile": "30th", "value": 15150 },
+              { "percentile": "40th", "value": 16815 },
+              { "percentile": "60th", "value": 19394 },
+              { "percentile": "70th", "value": 20426 },
+              { "percentile": "75th", "value": 21426 },
+              { "percentile": "80th", "value": 22456 },
+              { "percentile": "90th", "value": 26208 }
+            ]
           }
         },
         {
-          "22-29": {
-            "medianSalary": 26096
+          "range": "22-29",
+          "salaryData": {
+            "medianSalary": 26096,
+            "percentiles": [
+              { "percentile": "10th", "value": 17071 },
+              { "percentile": "20th", "value": 19348 },
+              { "percentile": "25th", "value": 20471 },
+              { "percentile": "30th", "value": 21503 },
+              { "percentile": "40th", "value": 23774 },
+              { "percentile": "60th", "value": 28624 },
+              { "percentile": "70th", "value": 31536 },
+              { "percentile": "75th", "value": 33185 },
+              { "percentile": "80th", "value": 35481 },
+              { "percentile": "90th", "value": 43094 }
+            ]
           }
         },
         {
-          "30-39": {
-            "medianSalary": 32965
+          "range": "30-39",
+          "salaryData": {
+            "medianSalary": 32965,
+            "percentiles": [
+              { "percentile": "10th", "value": 18981 },
+              { "percentile": "20th", "value": 22563 },
+              { "percentile": "25th", "value": 24274 },
+              { "percentile": "30th", "value": 25957 },
+              { "percentile": "40th", "value": 29363 },
+              { "percentile": "60th", "value": 36832 },
+              { "percentile": "70th", "value": 41404 },
+              { "percentile": "75th", "value": 44398 },
+              { "percentile": "80th", "value": 47662 },
+              { "percentile": "90th", "value": 61058 }
+            ]
           }
         },
         {
-          "40-49": {
-            "medianSalary": 35904
+          "range": "40-49",
+          "salaryData": {
+            "medianSalary": 35904,
+            "percentiles": [
+              { "percentile": "10th", "value": 19249 },
+              { "percentile": "20th", "value": 23149 },
+              { "percentile": "25th", "value": 25026 },
+              { "percentile": "30th", "value": 27123 },
+              { "percentile": "40th", "value": 31445 },
+              { "percentile": "60th", "value": 40649 },
+              { "percentile": "70th", "value": 46042 },
+              { "percentile": "75th", "value": 49991 },
+              { "percentile": "80th", "value": 54544 },
+              { "percentile": "90th", "value": 73236 }
+            ]
           }
         },
         {
-          "50-59": {
-            "medianSalary": 33231
+          "range": "50-59",
+          "salaryData": {
+            "medianSalary": 33231,
+            "percentiles": [
+              { "percentile": "10th", "value": 18520 },
+              { "percentile": "20th", "value": 21848 },
+              { "percentile": "25th", "value": 23646 },
+              { "percentile": "30th", "value": 25402 },
+              { "percentile": "40th", "value": 29120 },
+              { "percentile": "60th", "value": 38334 },
+              { "percentile": "70th", "value": 43989 },
+              { "percentile": "75th", "value": 47327 },
+              { "percentile": "80th", "value": 51710 },
+              { "percentile": "90th", "value": 68901 }
+            ]
           }
         },
         {
-          "60+": {
-            "medianSalary": 28854
+          "range": "60+",
+          "salaryData": {
+            "medianSalary": 28854,
+            "percentiles": [
+              { "percentile": "10th", "value": 17505 },
+              { "percentile": "20th", "value": 20048 },
+              { "percentile": "25th", "value": 21334 },
+              { "percentile": "30th", "value": 22745 },
+              { "percentile": "40th", "value": 25464 },
+              { "percentile": "60th", "value": 32885 },
+              { "percentile": "70th", "value": 37704 },
+              { "percentile": "75th", "value": 40622 },
+              { "percentile": "80th", "value": 44583 },
+              { "percentile": "90th", "value": 59691 }
+            ]
           }
         }
       ]
@@ -58,7 +137,8 @@
       "location": "United Kingdom",
       "ageRanges": [
         {
-          "all": {
+          "range": "all",
+          "salaryData": {
             "medianSalary": 11234,
             "percentiles": [
               { "percentile": "10th", "value": 3764 },
@@ -75,33 +155,111 @@
           }
         },
         {
-          "18-21": {
-            "medianSalary": 6514
+          "range": "18-21",
+          "salaryData": {
+            "medianSalary": 6514,
+            "percentiles": [
+              { "percentile": "10th", "value": 1982 },
+              { "percentile": "20th", "value": 3201 },
+              { "percentile": "25th", "value": 3713 },
+              { "percentile": "30th", "value": 4287 },
+              { "percentile": "40th", "value": 5425 },
+              { "percentile": "60th", "value": 7544 },
+              { "percentile": "70th", "value": 8675 },
+              { "percentile": "75th", "value": 9569 },
+              { "percentile": "80th", "value": 10567 },
+              { "percentile": "90th", "value": 13229 }
+            ]
           }
         },
         {
-          "22-29": {
-            "medianSalary": 10507
+          "range": "22-29",
+          "salaryData": {
+            "medianSalary": 10507,
+            "percentiles": [
+              { "percentile": "10th", "value": 3365 },
+              { "percentile": "20th", "value": 5930 },
+              { "percentile": "25th", "value": 6831 },
+              { "percentile": "30th", "value": 7491 },
+              { "percentile": "40th", "value": 8905 },
+              { "percentile": "60th", "value": 12021 },
+              { "percentile": "70th", "value": 13869 },
+              { "percentile": "75th", "value": 14825 },
+              { "percentile": "80th", "value": 16118 },
+              { "percentile": "90th", "value": 20549 }
+            ]
           }
         },
         {
-          "30-39": {
-            "medianSalary": 12167
+          "range": "30-39",
+          "salaryData": {
+            "medianSalary": 12167,
+            "percentiles": [
+              { "percentile": "10th", "value": 5127 },
+              { "percentile": "20th", "value": 7396 },
+              { "percentile": "25th", "value": 8354 },
+              { "percentile": "30th", "value": 8949 },
+              { "percentile": "40th", "value": 10615 },
+              { "percentile": "60th", "value": 14182 },
+              { "percentile": "70th", "value": 16898 },
+              { "percentile": "75th", "value": 18720 },
+              { "percentile": "80th", "value": 20945 },
+              { "percentile": "90th", "value": 28210 }
+            ]
           }
         },
         {
-          "40-49": {
-            "medianSalary": 12284
+          "range": "40-49",
+          "salaryData": {
+            "medianSalary": 12284,
+            "percentiles": [
+              { "percentile": "10th", "value": 4536 },
+              { "percentile": "20th", "value": 7208 },
+              { "percentile": "25th", "value": 8320 },
+              { "percentile": "30th", "value": 8837 },
+              { "percentile": "40th", "value": 10589 },
+              { "percentile": "60th", "value": 14082 },
+              { "percentile": "70th", "value": 16819 },
+              { "percentile": "75th", "value": 18890 },
+              { "percentile": "80th", "value": 21815 },
+              { "percentile": "90th", "value": 29110 }
+            ]
           }
         },
         {
-          "50-59": {
-            "medianSalary": 11914
+          "range": "50-59",
+          "salaryData": {
+            "medianSalary": 11914,
+            "percentiles": [
+              { "percentile": "10th", "value": 4417 },
+              { "percentile": "20th", "value": 7129 },
+              { "percentile": "25th", "value": 8109 },
+              { "percentile": "30th", "value": 8640 },
+              { "percentile": "40th", "value": 10262 },
+              { "percentile": "60th", "value": 13499 },
+              { "percentile": "70th", "value": 15783 },
+              { "percentile": "75th", "value": 17352 },
+              { "percentile": "80th", "value": 19229 },
+              { "percentile": "90th", "value": 26292 }
+            ]
           }
         },
         {
-          "60+": {
-            "medianSalary": 10505
+          "range": "60+",
+          "salaryData": {
+            "medianSalary": 10505,
+            "percentiles": [
+              { "percentile": "10th", "value": 3569 },
+              { "percentile": "20th", "value": 5929 },
+              { "percentile": "25th", "value": 6807 },
+              { "percentile": "30th", "value": 7615 },
+              { "percentile": "40th", "value": 9000 },
+              { "percentile": "60th", "value": 12250 },
+              { "percentile": "70th", "value": 14379 },
+              { "percentile": "75th", "value": 15885 },
+              { "percentile": "80th", "value": 17633 },
+              { "percentile": "90th", "value": 24104 }
+            ]
           }
         }
       ]

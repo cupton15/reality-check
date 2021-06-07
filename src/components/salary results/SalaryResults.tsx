@@ -10,10 +10,14 @@ type ResultProps = {
 };
 
 export default function SalaryResults({ jobInfo }: ResultProps): JSX.Element {
-  const salaryData =
+  const ageRanges =
     jobInfo.type === 'FullTime'
-      ? ukJobData.fullTime[0].ageRanges[0].all
-      : ukJobData.partTime[0].ageRanges[0].all;
+      ? ukJobData.fullTime[0].ageRanges
+      : ukJobData.partTime[0].ageRanges;
+
+  const salaryData = ageRanges.find(
+    (x) => x.range === jobInfo.ageRange
+  )?.salaryData;
 
   if (salaryData === undefined) {
     return <></>;
